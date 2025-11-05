@@ -108,41 +108,41 @@ Terraform allows you to define infrastructure resources in configuration files, 
 ### Essential Terraform Commands
 
 ```
-terraform init
+> terraform init
 
-This is the first step in Terraform. it Initializes Terraform working directory
+# This is the first step in Terraform. it Initializes Terraform working directory
 
-terraform validate
+> terraform validate
 
-This command will Validate your syntax and configuration correctness
+# This command will Validate your syntax and configuration correctness
 
-terraform plan
+> terraform plan
 
-The plan commands will Plan infrastructure changes without applying them for you to see what is going to happen
+# The plan commands will Plan infrastructure changes without applying them for you to see what is going to happen
 
-terraform apply
+> terraform apply
 
-The main command . It applies the planned changes to create/modify infrastructure. Creates the Iac.
+# The main command . It applies the planned changes to create/modify infrastructure. Creates the Iac.
 
-terraform show
+> terraform show
 
-Shows current state of resources
+# Shows current state of resources
 
-terraform destroy
+> terraform destroy
 
-When you are done and want to bring everything down then we use this command. It destroys all infrastructure managed by this configuration
+# When you are done and want to bring everything down then we use this command. It destroys all infrastructure managed by this configuration
 
-terraform fmt
+> terraform fmt
 
-Format Terraform files according to style conventions
+# Format Terraform files according to style conventions
 
-terraform list
+> terraform list
 
-List all resources in current state
+# List all resources in current state
 
-terraform state show aws_instance.demo
+> terraform state show aws_instance.demo
 
-Show details of a specific resource
+# Show details of a specific resource
 
 ```
 
