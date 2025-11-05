@@ -1,6 +1,8 @@
-# Terraform AWS Web Server - Infrastructure as Code Project
+# Terraform AWS Web Server - Infrastructure as Code Project(Iac)
 
 A comprehensive demonstration of Infrastructure as Code (IaC) principles using Terraform to deploy a secure AWS web server. This project showcases modern DevOps practices including cloud automation, security scanning, and best practices for managing cloud infrastructure programmatically.
+
+The project aims to advance DevSecOps skills by ensuring the Iac infrastructure is secure by creating the IaC infrastructure then merging with security features and policies.
 
 ---
 
@@ -23,7 +25,7 @@ A comprehensive demonstration of Infrastructure as Code (IaC) principles using T
 
 ## What is Infrastructure as Code (IaC)?
 
-Infrastructure as Code is a modern approach to managing and provisioning computing infrastructure through machine-readable configuration files rather than manual processes or interactive configuration tools. Instead of manually clicking through cloud console interfaces or running shell scripts, IaC allows teams to define infrastructure declaratively using code.
+Infrastructure as Code is a modern approach to managing and provisioning computing infrastructure through machine-readable configuration files rather than manual processes or interactive configuration tools. i.e. Instead of manually clicking through cloud console interfaces or running shell scripts, IaC allows teams to define infrastructure declaratively using code.
 
 ### Benefits of IaC
 
@@ -105,33 +107,43 @@ Terraform allows you to define infrastructure resources in configuration files, 
 
 ### Essential Terraform Commands
 
-```bash
-# Initialize Terraform working directory (required first step)
+```
 terraform init
 
-# Validate syntax and configuration correctness
+This is the first step in Terraform. it Initializes Terraform working directory
+
 terraform validate
 
-# Plan infrastructure changes without applying them
+This command will Validate your syntax and configuration correctness
+
 terraform plan
 
-# Apply planned changes to create/modify infrastructure
+The plan commands will Plan infrastructure changes without applying them for you to see what is going to happen
+
 terraform apply
 
-# Show current state of resources
+The main command . It applies the planned changes to create/modify infrastructure. Creates the Iac.
+
 terraform show
 
-# Destroy all infrastructure managed by this configuration
+Shows current state of resources
+
 terraform destroy
 
-# Format Terraform files according to style conventions
+When you are done and want to bring everything down then we use this command. It destroys all infrastructure managed by this configuration
+
 terraform fmt
 
-# List all resources in current state
-terraform state list
+Format Terraform files according to style conventions
 
-# Show details of a specific resource
+terraform list
+
+List all resources in current state
+
 terraform state show aws_instance.demo
+
+Show details of a specific resource
+
 ```
 
 ### Terraform File Structure
@@ -538,11 +550,19 @@ For issues or questions, please refer to the official Terraform and AWS document
 # Project Images
 Below are the images from the project.The images shows terraform and the web server hosted in aws.
 
+**Terraform Plan**
+
 ![Alt text](/images/terraform.png)
+
+**Terraform Init**
 
 ![Alt text](/images/terraform2.png)
 
+**Web server hosted in aws**
+
 ![Alt text](/images/terraform5.png)
+
+**Terraform Apply**
 
 ![Alt text](/images/terraform8.png)
 
