@@ -534,7 +534,19 @@ For issues or questions, please refer to the official Terraform and AWS document
 ---
 
 ## Index
+
 # Project Images
+Below are the images from the project.The images shows terraform and the web server hosted in aws.
+
+![Alt text](/Images/terraform.png)
+
+![Alt text](/Images/terraform2.png)
+
+![Alt text](/Images/terraform5.png)
+
+![Alt text](/Images/terraform8.png)
+
+
 
 
 
